@@ -13,10 +13,20 @@ class _DrawerAppState extends State<DrawerApp> {
   Widget build(BuildContext context) {
     return Drawer(
       child: ListView(
+        padding: EdgeInsets.zero,
         children: [
-          TextButton(
-            child: Text('Cadastro'),
-            onPressed: () {
+          DrawerHeader(
+            child: Icon(
+              Icons.list_alt,
+              size: 100,
+            ),
+            decoration: BoxDecoration(
+              color: Colors.blue,
+            ),
+          ),
+          ListTile(
+            title: Text('Cadastro'),
+            onTap: () {
               Navigator.push(
                   context,
                   MaterialPageRoute(
@@ -24,9 +34,9 @@ class _DrawerAppState extends State<DrawerApp> {
                   ));
             },
           ),
-          TextButton(
-            child: Text('Lista'),
-            onPressed: () {
+          ListTile(
+            title: Text('Lista'),
+            onTap: () {
               Navigator.push(
                   context,
                   MaterialPageRoute(
@@ -34,9 +44,9 @@ class _DrawerAppState extends State<DrawerApp> {
                   ));
             },
           ),
-          TextButton(
-            child: Text('Sobre'),
-            onPressed: () {
+          ListTile(
+            title: Text('Sobre'),
+            onTap: () {
               Navigator.push(
                   context,
                   MaterialPageRoute(
