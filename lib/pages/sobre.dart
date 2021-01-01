@@ -11,9 +11,14 @@ class Sobre extends StatelessWidget {
         padding: EdgeInsets.all(20),
         child: Center(
           child: Row(
+            mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Icon(Icons.copyright),
-              Text('Copyright Otavio Henrique'),
+              Text(
+                'Copyright Otavio Henrique',
+                textAlign: TextAlign.center,
+                style: Theme.of(context).textTheme.headline6,
+              ),
             ],
           ),
         ),

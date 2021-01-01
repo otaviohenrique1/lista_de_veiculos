@@ -16,65 +16,65 @@ class _DetalhesState extends State<Detalhes> {
         title: Text('Lista de veiculos'),
       ),
       body: Container(
-        padding: EdgeInsets.all(20),
-        child: Column(
+        child: ListView(
+          padding: EdgeInsets.all(20),
           children: [
             Text(
               'Nome: ' + dadosDetalhesTeste1['nome'],
-              style: Theme.of(context).textTheme.headline4,
+              style: Theme.of(context).textTheme.headline5,
             ),
             Text(
               'Pais de Origem: ' + dadosDetalhesTeste1['paisOrigem'],
-              style: Theme.of(context).textTheme.headline4,
+              style: Theme.of(context).textTheme.headline5,
             ),
             Text(
               'Tipo: ' + dadosDetalhesTeste1['tipo'],
-              style: Theme.of(context).textTheme.headline4,
+              style: Theme.of(context).textTheme.headline5,
             ),
             Text(
               'Fabricante: ' + dadosDetalhesTeste1['fabricante'],
-              style: Theme.of(context).textTheme.headline4,
+              style: Theme.of(context).textTheme.headline5,
             ),
             Text(
               'Utilizadores: ' + dadosDetalhesTeste1['utilizadores'],
-              style: Theme.of(context).textTheme.headline4,
+              style: Theme.of(context).textTheme.headline5,
             ),
             Text(
               'Quantidade produzida: ' +
                   dadosDetalhesTeste1['quantidadeProduzida'],
-              style: Theme.of(context).textTheme.headline4,
+              style: Theme.of(context).textTheme.headline5,
             ),
             Text(
               'Perido de serviço: ' + dadosDetalhesTeste1['peridoServico'],
-              style: Theme.of(context).textTheme.headline4,
+              style: Theme.of(context).textTheme.headline5,
             ),
             Text(
               'Massa: ' + dadosDetalhesTeste1['massa'],
-              style: Theme.of(context).textTheme.headline4,
+              style: Theme.of(context).textTheme.headline5,
             ),
             Text(
               'Comprimento: ' + dadosDetalhesTeste1['comprimento'],
-              style: Theme.of(context).textTheme.headline4,
+              style: Theme.of(context).textTheme.headline5,
             ),
             Text(
               'Altura: ' + dadosDetalhesTeste1['altura'],
-              style: Theme.of(context).textTheme.headline4,
+              style: Theme.of(context).textTheme.headline5,
             ),
             Text(
               'Largura: ' + dadosDetalhesTeste1['largura'],
-              style: Theme.of(context).textTheme.headline4,
+              style: Theme.of(context).textTheme.headline5,
             ),
             Text(
               'Tripulação: ' + dadosDetalhesTeste1['tripulacao'],
-              style: Theme.of(context).textTheme.headline4,
+              style: Theme.of(context).textTheme.headline5,
             ),
             Text(
               'Custo unitário: ' + dadosDetalhesTeste1['custoUnitario'],
-              style: Theme.of(context).textTheme.headline4,
+              style: Theme.of(context).textTheme.headline5,
             ),
             Text(
               'Armamento: ' + dadosDetalhesTeste1['armamento'],
-              style: Theme.of(context).textTheme.headline4,
+              style: Theme.of(context).textTheme.headline5,
             ),
             Container(
               margin: EdgeInsets.only(top: 20),
@@ -92,7 +92,6 @@ class _DetalhesState extends State<Detalhes> {
           ],
         ),
       ),
-      drawer: DrawerApp(),
     );
   }
 }

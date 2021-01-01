@@ -20,6 +20,7 @@ class _HomePageState extends State<HomePage> {
           children: [
             Text(
               'Bem Vindo',
+              textAlign: TextAlign.center,
               style: Theme.of(context).textTheme.headline1,
             )
           ],

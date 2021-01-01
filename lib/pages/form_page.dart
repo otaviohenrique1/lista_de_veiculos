@@ -11,7 +11,7 @@ class FormPage extends StatefulWidget {
 class _FormPageState extends State<FormPage> {
   final _formKey = GlobalKey<FormState>();
   Map<String, dynamic> _formData = {};
-  final String mensagemValidacao = 'Campo vazio';
+  // final String mensagemValidacao = 'Campo vazio';
 
   @override
   Widget build(BuildContext context) {
@@ -24,8 +24,8 @@ class _FormPageState extends State<FormPage> {
           return Form(
             key: _formKey,
             child: Container(
-              padding: EdgeInsets.all(20),
               child: ListView(
+                padding: EdgeInsets.all(20),
                 children: [
                   FormTemplate(
                     formData: _formData,
